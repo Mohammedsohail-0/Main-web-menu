@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — WebMenu</title>
+  
+    <link rel="stylesheet" href="admin.css">
+  
+</head>
+<body>
+  <header class="admin-header">
+    <div class="header-left">
+      <h1 id="siteTitle">Admin Panel</h1>
+      <div class="meta">Restaurant ID: <span id="ridDisplay"></span></div>
+    </div>
+    <div class="header-right">
+      <button id="addSectionBtn" class="btn primary">+ Add Section</button>
+      <button id="deleteSectionBtn" class="btn danger" title="Delete selected section">Delete Section</button>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <div id="loader" class="loader">Loading…</div>
+    <div id="sectionsContainer"></div>
+  </main>
+
+  <footer class="admin-footer">
+   
+    <button id="updateMenuBtn" class="btn primary">
+        Update Menu (Publish Changes)
+    </button>
+  </footer>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f6f6;
+  --text: #111111;
+  --muted: #666666;
+  --border: #e6e6e6;
+  --accent: #ff5300;
+  --radius: 14px;
+  --shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg-soft);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: var(--bg);
+  padding: 40px 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 90%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 24px;
+  color: var(--accent);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: crimson;
+  font-size: 14px;
+  margin-top: 10px;
+  height: 18px;
+}

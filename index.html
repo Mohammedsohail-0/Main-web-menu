@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Place name — Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-inner">
+      <h1 class="title">Place name</h1>
+      <button id="open-sidebar" class="burger" aria-label="Open sections">☰</button>
+    </div>
+
+    <!-- mobile horizontal category bar -->
+    <nav class="mobile-cats" id="mobileCats" aria-label="Sections">
+      <div class="mobile-cats-inner" id="mobileCatsInner">
+        <!-- populated by JS -->
+      </div>
+    </nav>
+  </header>
+
+  <div class="layout">
+
+    <!-- left sidebar for wide screens -->
+    <aside class="sidebar" id="sidebar" aria-label="Food sections">
+      <h3 class="sidebar-title">Sections</h3>
+      <ul class="section-list" id="sectionList">
+        <!-- populated by JS -->
+      </ul>
+    </aside>
+
+    <main class="food-sections-container" id="mainContent" tabindex="-1">
+      <div class="loader" id="loader" aria-hidden="true">
+        <div class="shimmer-card"></div>
+        <div class="shimmer-card"></div>
+        <div class="shimmer-card"></div>
+      </div>
+      <!-- sections injected here -->
+    </main>
+
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+  <footer style="text-align:center; padding:10px; font-size:13px; color:#999;">
+  <a href="login.html" style="color:#ff5300; text-decoration:none;">Admin Login</a>
+</footer>
+</html>
+
